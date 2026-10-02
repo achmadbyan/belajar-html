@@ -1,0 +1,20 @@
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: x-large;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+  font-size: x-large;
+}
+
+p {
+  text-align: center;
+}
+/* Pseudo-class - tautan saat di-hover */
+a:hover {
+  color: rgb(20, 198, 211);
+  text-decoration: underline;
+}
