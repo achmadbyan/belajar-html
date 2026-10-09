@@ -1,0 +1,17 @@
+/* Kotak dengan scroll jika konten melebihi tinggi */
+.panel-teks {
+  width: 100%;
+  height: 200px;
+  overflow-y: auto; /* Scroll vertikal otomatis */
+  overflow-x: hidden; /* Sembunyikan overflow horizontal */
+  border: 1px solid #515a5f;
+  padding: 16px;
+}
+
+/* Memotong teks panjang dengan elipsis (...) */
+.judul-kartu {
+  white-space: nowrap; /* Jangan bungkus teks */
+  overflow: hidden; /* Sembunyikan yang meluber */
+  text-overflow: ellipsis; /* Tampilkan '...' di akhir */
+  max-width: 200px;
+}

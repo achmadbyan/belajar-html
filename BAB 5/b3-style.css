@@ -1,0 +1,38 @@
+.kotak-relative {
+  position: relative;
+  top: 10px; /* Geser 10px ke bawah dari posisi asli */
+  left: 20px; /* Geser 20px ke kanan dari posisi asli */
+}
+
+/* position: absolute - keluar dari alur, posisi relatif ke parent */
+.parent {
+  position: relative; /* PENTING: parent harus relative/absolute/fixed */
+  width: 300px;
+  height: 200px;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Pojok kanan atas parent */
+  background: red;
+  color: white;
+  border-radius: 50%;
+}
+
+/* position: fixed - tetap di layar walau di-scroll */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1a5276;
+  z-index: 100; /* Pastikan di atas elemen lain */
+}
+
+/* position: sticky - menempel saat mencapai posisi tertentu */
+.section-header {
+  position: sticky;
+  top: 60px; /* Menempel di 60px dari atas viewport */
+  background: white;
+  z-index: 10;
+}

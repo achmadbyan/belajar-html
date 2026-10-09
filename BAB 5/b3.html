@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh CSS Position</title>
+    <link rel="stylesheet" href="b3-style.css" />
+  </head>
+  <body>
+    <!-- 1. Position Fixed (Navbar tetap berada di atas layar walau di-scroll) -->
+    <nav class="navbar">
+      <h2>Navbar Fixed</h2>
+    </nav>
+
+    <div style="margin-top: 80px; padding: 20px">
+      <!-- 2. Position Relative -->
+      <div class="kotak-relative">
+        <p>
+          Kotak ini menggunakan <strong>position: relative</strong> (digeser
+          10px ke bawah dan 20px ke kanan dari posisi aslinya).
+        </p>
+      </div>
+
+      <!-- 3. Position Sticky (Header section menempel saat di-scroll) -->
+      <div class="section-header">
+        <h3>Judul Section (Sticky)</h3>
+      </div>
+
+      <!-- 4. Position Absolute (Badge berada di pojok kanan atas elemen .parent) -->
+      <div
+        class="parent"
+        style="border: 1px solid #ccc; background-color: #f9f9f9; padding: 10px"
+      >
+        <p>Ini adalah elemen <strong>.parent</strong> (relative).</p>
+        <span class="badge" style="padding: 5px 10px">NEW</span>
+      </div>
+    </div>
+  </body>
+</html>
