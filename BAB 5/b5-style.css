@@ -1,0 +1,39 @@
+/* ===== FLEXBOX EXAMPLES =====*/
+
+/* Navbar horizontal dengan item di kanan*/
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo kiri, menu kanan */
+    align-items: center;            /* Vertikal rata tengah */
+    padding: 0 20px;
+    background: #1A5276;
+    height: 60px;
+}
+
+/* Kartu-kartu dalam satu baris, merata */
+.kartu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;       /* Melipat ke baris baru jika tidak muat */
+}
+.kartu {
+    flex: 1;               /* Setiap kartu mengisi ruang secara merata */
+    min-width: 200px;      /* Minimal lebar agar tidak terlalu kecil */
+}
+
+/* Memusatkan elemen secara horizontal & vertikal */
+.hero {
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;     /* Vertikal */
+    height: 100vh;
+}
+
+/* Layout sidebar + konten utama */
+.layout {
+    display: flex;
+    gap: 24px;
+}
+.sidebar { flex: 0 0 250px; }  /* Lebar tetap 250px */
+.konten  { flex: 1; }          /* Mengisi sisa ruang */
